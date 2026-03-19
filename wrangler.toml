@@ -1,15 +1,9 @@
 name = "xyzw-web-helper"
-type = "javascript"
 compatibility_date = "2023-12-01"
-main = "dist/_worker.js"
-
-[env.production]
-vars = { ENVIRONMENT = "production" }
 
 [build]
 command = "npm run build"
 cwd = "."
 
-[assets]
-directory = "dist"
-binding = "ASSETS"
+[env.production]
+vars = { ENVIRONMENT = "production" }
