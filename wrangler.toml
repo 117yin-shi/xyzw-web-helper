@@ -1,7 +1,15 @@
 name = "xyzw-web-helper"
-pages_build_output_dir = "./dist"
+type = "javascript"
 compatibility_date = "2023-12-01"
+main = "dist/_worker.js"
 
-[pages_build_config]
-build_command = "npm run build"
-destination_dir = "dist"
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[build]
+command = "npm run build"
+cwd = "."
+
+[assets]
+directory = "dist"
+binding = "ASSETS"
