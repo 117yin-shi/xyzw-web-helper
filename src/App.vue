@@ -29,7 +29,7 @@ const naiveTheme = computed(() => {
 
 // 监听主题变化事件
 const handleThemeChange = () => {
-  // 确保响应式状态同步
+  // 确保响应式状态同步123
   updateReactiveState();
   // 强制重新渲染
   setTimeout(() => {
